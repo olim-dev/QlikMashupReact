@@ -8,10 +8,10 @@ const LineChart = () => {
 
     const render = async () => {
         const sel = await app.nbl.selections();
-        sel.mount(document.querySelector('#chartBarToolbarRender'))
+        sel.mount(document.querySelector('#chartLineToolbarRender'))
 
         app.nbl.render({
-            element: document.querySelector('#chartBarRender'),
+            element: document.querySelector('#chartLineRender'),
             type: 'linechart',
             fields: ['title', '=(revenue)'],
             properties: {
@@ -28,8 +28,8 @@ const LineChart = () => {
 
     return(
         <div>
-            <div id="chartBarToolbarRender"></div>
-            <div id="chartBarRender" style={chartStyles.chart}></div>
+            <div id="chartLineToolbarRender"></div>
+            <div id="chartLineRender" style={chartStyles.chart}></div>
         </div>
     );
 }

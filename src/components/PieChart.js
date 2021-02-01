@@ -8,10 +8,10 @@ const PieChart = () => {
 
     const render = async () => {
         const sel = await app.nbl.selections();
-        sel.mount(document.querySelector('#chartBarToolbarRender'))
+        sel.mount(document.querySelector('#chartPieToolbarRender'))
 
         app.nbl.render({
-            element: document.querySelector('#chartBarRender'),
+            element: document.querySelector('#chartPieRender'),
             type: 'piechart',
             fields: ['title', '=(runtime)'],
             properties: {
@@ -28,8 +28,8 @@ const PieChart = () => {
 
     return(
         <div>
-            <div id="chartBarToolbarRender"></div>
-            <div id="chartBarRender" style={chartStyles.chart}></div>
+            <div id="chartPieToolbarRender"></div>
+            <div id="chartPieRender" style={chartStyles.chart}></div>
         </div>
     );
 }
