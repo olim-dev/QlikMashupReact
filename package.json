@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nebula.js/sn-bar-chart": "^0.3.5",
+    "@nebula.js/sn-line-chart": "^0.2.7",
+    "@nebula.js/sn-pie-chart": "^0.7.6",
+    "@nebula.js/stardust": "^1.1.0-alpha0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "enigma.js": "^2.7.2",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
